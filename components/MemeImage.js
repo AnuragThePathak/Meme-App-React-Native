@@ -13,7 +13,6 @@ const DisplayAnImageWithStyle = () => {
       .then((res) => res.json()).
       then((jsonData) => {
         setMemeData(jsonData.url)
-        console.log(jsonData.url)
       }).
       catch((e) => console.error(e)).
       finally(() => setIsLoading(false))
